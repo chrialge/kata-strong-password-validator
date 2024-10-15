@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: hsla(58, 100%, 68%, 1);
+
+    background: linear-gradient(135deg, hsla(58, 100%, 68%, 1) 0%, hsla(33, 100%, 53%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(58, 100%, 68%, 1) 0%, hsla(33, 100%, 53%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(58, 100%, 68%, 1) 0%, hsla(33, 100%, 53%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFF95B", endColorstr="#FF930F", GradientType=1);
+
+
+
+}
+
+.container_password {
+    margin: auto;
+    width: 95%;
+    background-color: white;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+
+    &>h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &>.input_password {
+        margin-bottom: 20px;
+
+        &>#password {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 1px solid gray;
+            outline-color: rgba(255, 147, 15, 1);
+        }
+    }
+
+    &>ul {
+        list-style: none;
+        margin-bottom: 20px;
+
+        &>li {
+            color: red;
+            margin-bottom: 3px;
+        }
+    }
+
+    &>.bar_security_password {
+        height: 25px;
+        background-color: lightgray;
+    }
+}

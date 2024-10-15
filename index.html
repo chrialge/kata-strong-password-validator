@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'
+        integrity='sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+</head>
+
+<body>
+
+    <div class="container_password">
+        <h2>Verifica della password</h2>
+        <div class="input_password">
+            <input type="password" name="password" id="password" onkeyup="check_password()"
+                onblur="hide_error_password()" placeholder="inserisci la password ...">
+        </div>
+        <ul>
+            <li id="rule_1">
+                <i class="fa-solid fa-xmark"></i>
+                <span>Almeno 9 caratteri</span>
+            </li>
+            <li id="rule_2">
+                <i class="fa-solid fa-xmark"></i>
+                <span>Almeno una maiuscola</span>
+            </li>
+            <li id="rule_3">
+                <i class="fa-solid fa-xmark"></i>
+                <span>Almeno un numero</span>
+            </li>
+            <li id="rule_4">
+                <i class="fa-solid fa-xmark"></i>
+                <span>Almeno un carattere speciale</span>
+            </li>
+        </ul>
+
+        <div class="bar_security_password">
+            <div id="bar"></div>
+        </div>
+
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
